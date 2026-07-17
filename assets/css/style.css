@@ -204,6 +204,18 @@ body {
     font-family: var(--font-heading);
 }
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-img-footer {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
