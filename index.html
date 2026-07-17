@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SKI PROTECT - Seguros de accidentes para deportes de invierno en Chile. Protege tu aventura en la nieve con la mejor cobertura. Compra en menos de un minuto.">
+    <meta name="keywords" content="seguro ski chile, seguro deportes invierno, seguro valle nevado, seguro la parva, seguro portillo, snow insurance chile, ski insurance chile, travel insurance chile">
+    <meta name="author" content="SKI PROTECT">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="SKI PROTECT - Seguros de Accidentes para Deportes de Invierno">
+    <meta property="og:description" content="Compra tu seguro de accidentes en menos de un minuto. Cobertura internacional 24/7.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>SKI PROTECT | Seguros de Accidentes para Deportes de Invierno en Chile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SKI PROTECT",
+        "url": "https://skiprotect.cl",
+        "logo": "https://skiprotect.cl/assets/img/logo.svg",
+        "description": "Seguros de accidentes para deportes de invierno en Chile",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressCountry": "CL"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+56-9-XXXX-XXXX",
+            "contactType": "customer service",
+            "availableLanguage": ["Spanish", "English", "Portuguese"]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="lang-bar">
+        <div class="container">
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+            <div class="lang-bar-contact">
+                <a href="tel:+569XXXXXXXX"><i class="fas fa-phone"></i> +56 9 XXXX XXXX</a>
+                <a href="mailto:contacto@skiprotect.cl"><i class="fas fa-envelope"></i> contacto@skiprotect.cl</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 60 60" width="40" height="40">
+                    <defs>
+                        <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1"/>
+                            <stop offset="100%" style="stop-color:#8A8A8A;stop-opacity:1"/>
+                        </linearGradient>
+                        <linearGradient id="mountainGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" style="stop-color:#143E72;stop-opacity:1"/>
+                            <stop offset="100%" style="stop-color:#0B2E59;stop-opacity:1"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M30 4 L48 14 L48 32 C48 44 30 56 30 56 C30 56 12 44 12 32 L12 14 Z" fill="url(#shieldGrad)" stroke="#A0A0A0" stroke-width="1.5"/>
+                    <path d="M16 38 L30 20 L44 38 L38 28 L30 34 L22 28 Z" fill="url(#mountainGrad)" opacity="0.9"/>
+                    <path d="M26 36 L30 30 L34 36" fill="none" stroke="#C0C0C0" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="30" cy="16" r="2.5" fill="#C0C0C0" opacity="0.8"/>
+                </svg>
+                <span class="logo-text">SKI <strong>PROTECT</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#cotizar" class="nav-link">Cotizar</a></li>
+                <li><a href="#planes" class="nav-link">Comparar Planes</a></li>
+                <li><a href="#coberturas" class="nav-link">Coberturas</a></li>
+                <li><a href="#centros" class="nav-link">Centros de Ski</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#cotizar" class="btn btn-primary btn-nav-cta">Comprar Seguro</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+            <source src="assets/img/hero-skiing.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <span class="hero-badge" data-translate="hero-badge">Líder en seguros de deportes de invierno</span>
+                <h1 class="hero-title" data-translate="hero-title">Protege tu aventura en la nieve</h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">Compra tu seguro de accidentes en menos de un minuto y disfruta tu viaje con tranquilidad.</p>
+                <div class="hero-cta">
+                    <a href="#cotizar" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calculator"></i> Cotizar Ahora
+                    </a>
+                    <a href="#cotizar" class="btn btn-accent btn-lg">
+                        <i class="fas fa-shield-haltered"></i> Comprar Seguro
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="15000">0</span>
+                        <span class="stat-label">Viajeros protegidos</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="60">0</span>
+                        <span class="stat-label">Segundos para comprar</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-label">Horas de asistencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Descubre más</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Cotizador Section -->
+    <section id="cotizar" class="section cotizador-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-translate="cotizar-badge">Cotizador</span>
+                <h2 class="section-title" data-translate="cotizar-title">Cotiza tu seguro en segundos</h2>
+                <p class="section-subtitle" data-translate="cotizar-subtitle">Completa los datos y obtén los mejores planes para tu viaje a la nieve</p>
+            </div>
+            <div class="cotizador-card">
+                <div class="cotizador-progress">
+                    <div class="progress-step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Destino</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Fechas</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Viajeros</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="4">
+                        <span class="step-number">4</span>
+                        <span class="step-label">Planes</span>
+                    </div>
+                </div>
+                <form id="cotizadorForm" class="cotizador-form">
+                    <!-- Step 1: Destino -->
+                    <div class="form-step active" id="step1">
+                        <h3>¿A qué centro de ski vas?</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Destino / Región</label>
+                                <select id="destino" required>
+                                    <option value="">Selecciona una región</option>
+                                    <option value="metropolitana">Región Metropolitana</option>
+                                    <option value="valparaiso">Región de Valparaíso</option>
+                                    <option value="nuble">Región de Ñuble</option>
+                                    <option value="araucania">Región de La Araucanía</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Centro de Ski</label>
+                                <select id="centroSki" required disabled>
+                                    <option value="">Primero selecciona una región</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Tipo de Deporte</label>
+                                <select id="deporte" required>
+                                    <option value="">Selecciona tu deporte</option>
+                                    <option value="esqui">Esquí</option>
+                                    <option value="snowboard">Snowboard</option>
+                                    <option value="esqui-travesia">Esquí de Travesía</option>
+                                    <option value="moto-nieve">Moto de Nieve</option>
+                                    <option value="trineo">Trineo</option>
+                                    <option value="senderismo-nieve">Senderismo en Nieve</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary form-next" data-next="2">Siguiente <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <!-- Step 2: Fechas -->
+                    <div class="form-step" id="step2">
+                        <h3>¿Cuándo viajas?</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Fecha de Inicio</label>
+                                <input type="date" id="fechaInicio" required min="">
+                            </div>
+                            <div class="form-group">
+                                <label>Fecha de Término</label>
+                                <input type="date" id="fechaTermino" required min="">
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline form-prev" data-prev="1"><i class="fas fa-arrow-left"></i> Anterior</button>
+                            <button type="button" class="btn btn-primary form-next" data-next="3">Siguiente <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <!-- Step 3: Viajeros -->
+                    <div class="form-step" id="step3">
+                        <h3>¿Quiénes viajan?</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Cantidad de Viajeros</label>
+                                <select id="cantidadViajeros" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="1">1 viajero</option>
+                                    <option value="2">2 viajeros</option>
+                                    <option value="3">3 viajeros</option>
+                                    <option value="4">4 viajeros</option>
+                                    <option value="5">5 viajeros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Edad del viajero principal</label>
+                                <input type="number" id="edad" min="1" max="99" placeholder="Ej: 35" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nacionalidad</label>
+                                <select id="nacionalidad" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="chilena">Chilena</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="brasilena">Brasileña</option>
+                                    <option value="uruguaya">Uruguaya</option>
+                                    <option value="peruana">Peruana</option>
+                                    <option value="colombiana">Colombiana</option>
+                                    <option value="estadounidense">Estadounidense</option>
+                                    <option value="europea">Europea</option>
+                                    <option value="otra">Otra</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline form-prev" data-prev="2"><i class="fas fa-arrow-left"></i> Anterior</button>
+                            <button type="button" class="btn btn-accent form-next" data-next="4" id="verPlanes">Ver Planes <i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <!-- Step 4: Resultados -->
+                    <div class="form-step" id="step4">
+                        <h3>Planes Disponibles</h3>
+                        <div class="planes-grid" id="planesGrid">
+                            <!-- Plan Básico -->
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Plan Básico</h4>
+                                    <span class="plan-provider">Qualitas Assistance</span>
+                                </div>
+                                <div class="plan-price">
+                                    <span class="price-amount">USD 45</span>
+                                    <span class="price-period">/ persona</span>
+                                </div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Gastos médicos USD 15.000</li>
+                                    <li><i class="fas fa-check"></i> Rescate en pista</li>
+                                    <li><i class="fas fa-check"></i> Asistencia 24/7</li>
+                                    <li><i class="fas fa-check"></i> Póliza digital</li>
+                                    <li class="feature-disabled"><i class="fas fa-times"></i> Repatriación</li>
+                                    <li class="feature-disabled"><i class="fas fa-times"></i> Cobertura internacional</li>
+                                </ul>
+                                <button class="btn btn-primary btn-block">Comprar Ahora</button>
+                            </div>
+                            <!-- Plan Premium -->
+                            <div class="plan-card plan-recommended">
+                                <span class="plan-badge">Más Popular</span>
+                                <div class="plan-header">
+                                    <h4>Plan Premium</h4>
+                                    <span class="plan-provider">Qualitas Assistance</span>
+                                </div>
+                                <div class="plan-price">
+                                    <span class="price-amount">USD 75</span>
+                                    <span class="price-period">/ persona</span>
+                                </div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Gastos médicos USD 50.000</li>
+                                    <li><i class="fas fa-check"></i> Rescate en pista</li>
+                                    <li><i class="fas fa-check"></i> Traslado médico</li>
+                                    <li><i class="fas fa-check"></i> Repatriación</li>
+                                    <li><i class="fas fa-check"></i> Asistencia 24/7</li>
+                                    <li><i class="fas fa-check"></i> Póliza digital</li>
+                                    <li><i class="fas fa-check"></i> Cobertura internacional</li>
+                                </ul>
+                                <button class="btn btn-accent btn-block">Comprar Ahora</button>
+                            </div>
+                            <!-- Plan Total -->
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Plan Total</h4>
+                                    <span class="plan-provider">Obredom</span>
+                                </div>
+                                <div class="plan-price">
+                                    <span class="price-amount">USD 120</span>
+                                    <span class="price-period">/ persona</span>
+                                </div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Gastos médicos USD 100.000</li>
+                                    <li><i class="fas fa-check"></i> Rescate en pista</li>
+                                    <li><i class="fas fa-check"></i> Traslado médico</li>
+                                    <li><i class="fas fa-check"></i> Repatriación</li>
+                                    <li><i class="fas fa-check"></i> Asistencia 24/7</li>
+                                    <li><i class="fas fa-check"></i> Póliza digital</li>
+                                    <li><i class="fas fa-check"></i> Cobertura internacional</li>
+                                    <li><i class="fas fa-check"></i> Cancelación de viaje</li>
+                                </ul>
+                                <button class="btn btn-primary btn-block">Comprar Ahora</button>
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline form-prev" data-prev="3"><i class="fas fa-arrow-left"></i> Modificar búsqueda</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios / Coberturas -->
+    <section id="coberturas" class="section coberturas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-translate="coberturas-badge">Coberturas</span>
+                <h2 class="section-title" data-translate="coberturas-title">Todo lo que incluye tu seguro</h2>
+                <p class="section-subtitle" data-translate="coberturas-subtitle">Protección completa para que solo te preocupes de disfrutar</p>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-hospital"></i></div>
+                    <h4>Gastos Médicos</h4>
+                    <p>Cobertura de hasta USD 100.000 en atención médica por accidentes en la nieve.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-helicopter"></i></div>
+                    <h4>Rescate en Pista</h4>
+                    <p>Servicio de rescate y evacuación desde cualquier pista de ski en Chile.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-ambulance"></i></div>
+                    <h4>Traslado Médico</h4>
+                    <p>Ambulancia y traslado al centro médico más cercano en caso de emergencia.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-plane-arrival"></i></div>
+                    <h4>Repatriación</h4>
+                    <p>Traslado sanitario a tu país de origen si es necesario.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-headset"></i></div>
+                    <h4>Asistencia 24/7</h4>
+                    <p>Atención telefónica y por WhatsApp en español, inglés y portugués.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h4>Póliza Digital</h4>
+                    <p>Recibe tu póliza al instante por email. Sin papeles, sin esperas.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Compra Inmediata</h4>
+                    <p>Compra tu seguro en menos de 60 segundos. 100% online, sin trámites.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h4>Cobertura Internacional</h4>
+                    <p>Válido en centros de ski de Chile, Argentina y Estados Unidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Por qué elegir SKI PROTECT? -->
+    <section class="section why-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">¿Por qué SKI PROTECT?</span>
+                <h2 class="section-title">La protección que mereces</h2>
+                <p class="section-subtitle">Miles de viajeros confían en nosotros cada temporada</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">
+                        <span class="counter" data-target="15000">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <p>Viajeros protegidos</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">
+                        <span class="counter" data-target="60">0</span>
+                        <span class="counter-suffix">s</span>
+                    </div>
+                    <p>Compra en menos de</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">
+                        <span class="counter" data-target="98">0</span>
+                        <span class="counter-suffix">%</span>
+                    </div>
+                    <p>Satisfacción</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">
+                        <span class="counter" data-target="5">0</span>
+                        <span class="counter-suffix"></span>
+                    </div>
+                    <p>Centros de ski</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centros de Ski -->
+    <section id="centros" class="section centros-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Centros de Ski</span>
+                <h2 class="section-title">Los mejores centros de ski de Chile</h2>
+                <p class="section-subtitle">Elige tu destino y cotiza tu seguro al instante</p>
+            </div>
+            <div class="centros-grid">
+                <div class="centro-card" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80')">
+                    <div class="centro-overlay"></div>
+                    <div class="centro-content">
+                        <h3>Valle Nevado</h3>
+                        <p>Región Metropolitana</p>
+                        <a href="#cotizar" class="btn btn-sm btn-accent" onclick="selectCentro('Valle Nevado')">Cotizar</a>
+                    </div>
+                </div>
+                <div class="centro-card" style="background-image: url('https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=600&q=80')">
+                    <div class="centro-overlay"></div>
+                    <div class="centro-content">
+                        <h3>La Parva</h3>
+                        <p>Región Metropolitana</p>
+                        <a href="#cotizar" class="btn btn-sm btn-accent" onclick="selectCentro('La Parva')">Cotizar</a>
+                    </div>
+                </div>
+                <div class="centro-card" style="background-image: url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?w=600&q=80')">
+                    <div class="centro-overlay"></div>
+                    <div class="centro-content">
+                        <h3>El Colorado</h3>
+                        <p>Región Metropolitana</p>
+                        <a href="#cotizar" class="btn btn-sm btn-accent" onclick="selectCentro('El Colorado')">Cotizar</a>
+                    </div>
+                </div>
+                <div class="centro-card" style="background-image: url('https://images.unsplash.com/photo-1522053550445-b82531b54a8d?w=600&q=80')">
+                    <div class="centro-overlay"></div>
+                    <div class="centro-content">
+                        <h3>Portillo</h3>
+                        <p>Región de Valparaíso</p>
+                        <a href="#cotizar" class="btn btn-sm btn-accent" onclick="selectCentro('Portillo')">Cotizar</a>
+                    </div>
+                </div>
+                <div class="centro-card" style="background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80')">
+                    <div class="centro-overlay"></div>
+                    <div class="centro-content">
+                        <h3>Nevados de Chillán</h3>
+                        <p>Región de Ñuble</p>
+                        <a href="#cotizar" class="btn btn-sm btn-accent" onclick="selectCentro('Nevados de Chillán')">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Compra -->
+    <section class="section proceso-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Proceso</span>
+                <h2 class="section-title">Compra tu seguro en 4 pasos</h2>
+                <p class="section-subtitle">Así de simple es estar protegido</p>
+            </div>
+            <div class="proceso-grid">
+                <div class="proceso-step">
+                    <div class="proceso-numero">01</div>
+                    <div class="proceso-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>Cotiza</h4>
+                    <p>Completa tus datos de viaje y compara los planes disponibles al instante.</p>
+                </div>
+                <div class="proceso-step">
+                    <div class="proceso-numero">02</div>
+                    <div class="proceso-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h4>Compara</h4>
+                    <p>Revisa las coberturas y beneficios de cada plan. Elige el que mejor se ajuste.</p>
+                </div>
+                <div class="proceso-step">
+                    <div class="proceso-numero">03</div>
+                    <div class="proceso-icon"><i class="fas fa-credit-card"></i></div>
+                    <h4>Compra</h4>
+                    <p>Pago 100% seguro con tarjeta de crédito, débito o transferencia.</p>
+                </div>
+                <div class="proceso-step">
+                    <div class="proceso-numero">04</div>
+                    <div class="proceso-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h4>Recibe tu póliza</h4>
+                    <p>Tu póliza llega al instante por email. Lista para tu viaje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonios-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonios-carousel" id="testimoniosCarousel">
+                <div class="testimonios-track" id="testimoniosTrack">
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p>"Tuve un accidente en Valle Nevado y la asistencia fue inmediata. Me rescataron en 20 minutos. ¡Imprescindible!"</p>
+                        <div class="testimonio-author">
+                            <div class="testimonio-avatar">CM</div>
+                            <div>
+                                <strong>Carlos M.</strong>
+                                <span>Santiago, Chile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p>"Compré el seguro para mi familia desde Brasil. Todo online, rapidísimo. La tranquilidad no tiene precio."</p>
+                        <div class="testimonio-author">
+                            <div class="testimonio-avatar">RS</div>
+                            <div>
+                                <strong>Rafael S.</strong>
+                                <span>São Paulo, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p>"Llevo 3 temporadas con SKI PROTECT. Excelente servicio y los precios son muy convenientes."</p>
+                        <div class="testimonio-author">
+                            <div class="testimonio-avatar">AG</div>
+                            <div>
+                                <strong>Ana G.</strong>
+                                <span>Buenos Aires, Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p>"Viajé desde Estados Unidos a Portillo. El seguro cubrió todo sin problemas. 100% recomendado."</p>
+                        <div class="testimonio-author">
+                            <div class="testimonio-avatar">JW</div>
+                            <div>
+                                <strong>James W.</strong>
+                                <span>Denver, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="testPrev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" id="testNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots" id="testDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Blog</span>
+                <h2 class="section-title">Temporada de nieve</h2>
+                <p class="section-subtitle">Consejos, guías y todo lo que necesitas saber</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1522053550445-b82531b54a8d?w=500&q=80')"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Guía</span>
+                        <h4>Cómo elegir un seguro para esquiar</h4>
+                        <p>Guía completa para elegir la mejor cobertura según tu nivel y destino.</p>
+                        <a href="#" class="blog-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?w=500&q=80')"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tips</span>
+                        <h4>Consejos para viajar a la nieve</h4>
+                        <p>Todo lo que necesitas saber antes de tu primer viaje a la nieve.</p>
+                        <a href="#" class="blog-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&q=80')"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Seguridad</span>
+                        <h4>Qué hacer en caso de accidente</h4>
+                        <p>Pasos a seguir si sufres un accidente en la nieve. Información vital.</p>
+                        <a href="#" class="blog-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas rápidas a tus dudas</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué cubre el seguro de SKI PROTECT?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cubre accidentes ocurridos durante la práctica de deportes de invierno: gastos médicos, rescate en pista, traslado médico, repatriación y asistencia 24/7. La cobertura específica depende del plan que elijas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Puedo comprar el seguro si soy extranjero?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Sí! SKI PROTECT está disponible para viajeros de cualquier nacionalidad que visiten Chile. Contamos con atención en español, inglés y portugués.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuánto tiempo antes de mi viaje debo comprar el seguro?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puedes comprarlo hasta el mismo día de tu viaje. La póliza se emite al instante y llega a tu correo en segundos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué documentos recibo al comprar?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recibes tu póliza digital en PDF con todos los detalles de cobertura, números de asistencia y condiciones del seguro.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cómo funciona la asistencia en pista?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Solo debes llamar a nuestro número de emergencia 24/7. Coordinamos el rescate con la patrulla del centro de ski y la atención médica necesaria.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Tienen cobertura para snowboard fuera de pista?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El Plan Total incluye cobertura para esquí y snowboard fuera de pista. Los planes Básico y Premium cubren solo dentro de pistas autorizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contacto</span>
+                <h2 class="section-title">¿Tienes dudas? Hablemos</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <div class="contacto-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/569XXXXXXXX" target="_blank">+56 9 XXXX XXXX</a>
+                            <span>Respuesta en menos de 5 minutos</span>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <div class="contacto-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contacto@skiprotect.cl">contacto@skiprotect.cl</a>
+                            <span>Respondemos en máximo 2 horas</span>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <div class="contacto-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Oficina</h4>
+                            <p>Santiago, Chile</p>
+                            <span>Atención con cita previa</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form" id="contactoForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 60 60" width="35" height="35">
+                            <path d="M30 4 L48 14 L48 32 C48 44 30 56 30 56 C30 56 12 44 12 32 L12 14 Z" fill="url(#shieldGrad)" stroke="#A0A0A0" stroke-width="1.5"/>
+                            <path d="M16 38 L30 20 L44 38 L38 28 L30 34 L22 28 Z" fill="url(#mountainGrad)" opacity="0.9"/>
+                        </svg>
+                        <span>SKI <strong>PROTECT</strong></span>
+                    </div>
+                    <p>Tu aventura, nuestra protección. Líderes en seguros de accidentes para deportes de invierno en Chile.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#cotizar">Cotizar</a></li>
+                        <li><a href="#planes">Comparar Planes</a></li>
+                        <li><a href="#coberturas">Coberturas</a></li>
+                        <li><a href="#centros">Centros de Ski</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="mailto:contacto@skiprotect.cl"><i class="fas fa-envelope"></i> contacto@skiprotect.cl</a></li>
+                        <li><a href="tel:+569XXXXXXXX"><i class="fas fa-phone"></i> +56 9 XXXX XXXX</a></li>
+                        <li><a href="https://wa.me/569XXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SKI PROTECT. Todos los derechos reservados.</p>
+                <div class="footer-pagos">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/569XXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</body>
+</html>
