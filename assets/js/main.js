@@ -404,36 +404,36 @@ function initLanguageSwitcher() {
     const langBtns = document.querySelectorAll('.lang-btn');
     const translations = {
         es: {
-            'hero-badge': 'Líder en seguros de deportes de invierno',
+            'hero-badge': 'Líder en planes de asistencia de viaje',
             'hero-title': 'Protege tu aventura en la nieve',
-            'hero-subtitle': 'Compra tu seguro de accidentes en menos de un minuto y disfruta tu viaje con tranquilidad.',
+            'hero-subtitle': 'Compra tu plan de asistencia de viaje en menos de un minuto y disfruta tu viaje con tranquilidad.',
             'cotizar-badge': 'Cotizador',
-            'cotizar-title': 'Cotiza tu seguro en segundos',
+            'cotizar-title': 'Cotiza tu plan en segundos',
             'cotizar-subtitle': 'Completa los datos y obtén los mejores planes para tu viaje a la nieve',
             'coberturas-badge': 'Coberturas',
-            'coberturas-title': 'Todo lo que incluye tu seguro',
+            'coberturas-title': 'Todo lo que incluye tu plan',
             'coberturas-subtitle': 'Protección completa para que solo te preocupes de disfrutar'
         },
         en: {
-            'hero-badge': 'Leader in winter sports insurance',
+            'hero-badge': 'Leader in travel assistance plans',
             'hero-title': 'Protect your snow adventure',
-            'hero-subtitle': 'Buy your accident insurance in less than a minute and enjoy your trip with peace of mind.',
+            'hero-subtitle': 'Get your travel assistance plan in less than a minute and enjoy your trip with peace of mind.',
             'cotizar-badge': 'Quote',
-            'cotizar-title': 'Get your quote in seconds',
+            'cotizar-title': 'Get your plan in seconds',
             'cotizar-subtitle': 'Fill in your details and get the best plans for your snow trip',
             'coberturas-badge': 'Coverage',
-            'coberturas-title': 'Everything included in your insurance',
+            'coberturas-title': 'Everything included in your plan',
             'coberturas-subtitle': 'Complete protection so you only worry about enjoying'
         },
         pt: {
-            'hero-badge': 'Líder em seguros de esportes de inverno',
+            'hero-badge': 'Líder em planos de assistência de viagem',
             'hero-title': 'Proteja sua aventura na neve',
-            'hero-subtitle': 'Compre seu seguro de acidentes em menos de um minuto e aproveite sua viagem com tranquilidade.',
+            'hero-subtitle': 'Compre seu plano de assistência de viagem em menos de um minuto e aproveite sua viagem com tranquilidade.',
             'cotizar-badge': 'Cotação',
             'cotizar-title': 'Faça sua cotação em segundos',
             'cotizar-subtitle': 'Preencha os dados e obtenha os melhores planos para sua viagem à neve',
             'coberturas-badge': 'Coberturas',
-            'coberturas-title': 'Tudo que seu seguro inclui',
+            'coberturas-title': 'Tudo que seu plano inclui',
             'coberturas-subtitle': 'Proteção completa para você se preocupar apenas em aproveitar'
         }
     };
